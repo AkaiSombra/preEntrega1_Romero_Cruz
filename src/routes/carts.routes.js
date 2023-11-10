@@ -51,18 +51,17 @@ class Carts{
                     return data
                 })
                 Carts.carts = JSON.parse(dataJSON)
-                console.log(Carts.carts)
                 
                 const cart = Carts.carts.find((Carts) => Carts.id === cartId)
-                console.log(cart)
-                /* const existente = cart.products.id
-                console.log(existente) */ 
-                if(cart.products.id){
-                    console.log(`Producto ya en la lista`)
+                const existente = cart.products.find((products) => products.productId === productId)
+                console.log(existente)
+
+               if(existente){
+                    existente.quantity++
                 } else {
                 const product = { productId: productId, quantity: 1}
                 cart.products.push(product)
-                }
+                } 
 
                 const dataToWrite = JSON.stringify(Carts.carts, null, 2)
                 await fs.promises.writeFile(jsonPath, dataToWrite, 'utf-8')
@@ -100,15 +99,15 @@ router.post('/:cid/products/:pid', async (req, res) => {
     try{
         const cartId = parseInt(req.params.cid)
         const productId = parseInt(req.params.pid)
+        if(cartId < 1 || productId < 1){
+            res.status(400).send(`ID no valido`)
+        } else{
         const productAdd = await Carts.addProduct(cartId, productId)
         res.status(200).send(productAdd)
+        }
     } catch(err){
         res.status(400).send(err.message)
     }
-    // La ruta POST  /:cid/product/:pid deberá agregar el producto al arreglo “products” del carrito seleccionado, agregándose como un objeto bajo el siguiente formato:
-    // product: SÓLO DEBE CONTENER EL ID DEL PRODUCTO (Es crucial que no agregues el producto completo)
-    // quantity: debe contener el número de ejemplares de dicho producto. El producto, de momento, se agregará de uno en uno.
-    // Además, si un producto ya existente intenta agregarse al producto, incrementar el campo quantity de dicho producto.
 })
 
 export default router
