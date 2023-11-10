@@ -1,0 +1,13 @@
+[
+  {
+    "title": "Sekiro: Shadow die Twice",
+    "description": "Souls-like game with katanas",
+    "code": 2981,
+    "price": 60,
+    "status": true,
+    "stock": true,
+    "category": "RPG",
+    "thumbnail": "Sekiro.jpg",
+    "id": 2
+  }
+]
