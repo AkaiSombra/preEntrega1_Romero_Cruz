@@ -132,7 +132,6 @@ router.get('/:pid', async (req, res) => {
     try{
         const id = parseInt(req.params.pid)
         const products = await ProductManager.getProductById(id)
-        console.log(products)
         res.status(200).send(products)
     } catch(err){
         res.status(400).send(err.message)
