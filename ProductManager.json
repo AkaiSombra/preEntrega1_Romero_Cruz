@@ -1,13 +1,132 @@
 [
   {
-    "title": "Sekiro: Shadow die Twice",
+    "id": 1,
+    "title": "Song of nunu",
     "description": "Souls-like game with katanas",
-    "code": 2981,
+    "code": 2813,
     "price": 60,
     "status": true,
     "stock": true,
     "category": "RPG",
-    "thumbnail": "Sekiro.jpg",
-    "id": 2
+    "thumbnail": "Sekiro.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Zelda: Skywar Sword",
+    "description": "Souls-like game with katanas",
+    "code": 8372,
+    "price": 60,
+    "status": true,
+    "stock": true,
+    "category": "RPG",
+    "thumbnail": "Sekiro.jpg"
+  },
+  {
+    "id": 3,
+    "title": "fuwa",
+    "description": "Souls-like game with katanas",
+    "code": 3812,
+    "price": 60,
+    "status": true,
+    "stock": true,
+    "category": "RPG",
+    "thumbnail": "Sekiro.jpg"
+  },
+  {
+    "id": 4,
+    "title": "fuwil",
+    "description": "Souls-like game with katanas",
+    "code": 2371,
+    "price": 60,
+    "status": true,
+    "stock": true,
+    "category": "RPG",
+    "thumbnail": "Sekiro.jpg"
+  },
+  {
+    "id": 5,
+    "title": "lol",
+    "description": "Souls-like game with katanas",
+    "code": 3182,
+    "price": 60,
+    "status": true,
+    "stock": true,
+    "category": "RPG",
+    "thumbnail": "Sekiro.jpg"
+  },
+  {
+    "id": 6,
+    "title": "valorant",
+    "description": "Souls-like game with katanas",
+    "code": 3814,
+    "price": 60,
+    "status": true,
+    "stock": true,
+    "thumbnail": "Sekiro.jpg"
+  },
+  {
+    "id": 7,
+    "title": "valorant",
+    "description": "Souls-like game with katanas",
+    "code": 5831,
+    "price": 60,
+    "status": true,
+    "stock": true,
+    "category": "RPG",
+    "thumbnail": "Sekiro.jpg"
+  },
+  {
+    "id": 8,
+    "title": "valorant",
+    "description": "Souls-like game with katanas",
+    "code": 9482,
+    "price": 60,
+    "status": true,
+    "stock": true,
+    "thumbnail": "Sekiro.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Wild rift",
+    "description": "Souls-like game with katanas",
+    "code": 9083,
+    "price": 60,
+    "status": true,
+    "stock": true,
+    "category": "RPG",
+    "thumbnail": "Sekiro.jpg"
+  },
+  {
+    "id": 11,
+    "title": "COD",
+    "description": "Souls-like game with katanas",
+    "code": 4723,
+    "price": 60,
+    "status": true,
+    "stock": true,
+    "category": "RPG",
+    "thumbnail": ""
+  },
+  {
+    "id": 12,
+    "title": "BOII",
+    "description": "Souls-like game with katanas",
+    "code": 4561,
+    "price": 60,
+    "status": true,
+    "stock": true,
+    "category": "RPG",
+    "thumbnail": "Sekiro.jpg"
+  },
+  {
+    "id": 13,
+    "title": "COD",
+    "description": "Souls-like game with katanas",
+    "code": 2173,
+    "price": 60,
+    "status": true,
+    "stock": true,
+    "category": "RPG",
+    "thumbnail": ""
   }
 ]
